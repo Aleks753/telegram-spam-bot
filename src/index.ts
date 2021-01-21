@@ -1,3 +1,3 @@
-import telegramBotStart from './telegram/index';
+import telegramBotStart from './bot';
 
 telegramBotStart();

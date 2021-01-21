@@ -1,9 +1,9 @@
-import { BOT_TOKEN, ENABLE_KICK_URL } from './config';
+import { BOT_TOKEN, ENABLE_KICK_URL } from '../config';
 import { ChatMember, Message } from 'node-telegram-bot-api';
 
-const botMessage: any = require('../common/bot-message.json');
-const blackList: string[] = require('../common/black-list.json').rules;
-const whiteList: string[] = require('../common/white-list.json').rules;
+const botMessage: any = require('../config/bot-message.json');
+const blackList: string[] = require('../config/black-list.json').rules;
+const whiteList: string[] = require('../config/white-list.json').rules;
 
 function telegramBotStart () {
     const TelegramBot = require('node-telegram-bot-api');
